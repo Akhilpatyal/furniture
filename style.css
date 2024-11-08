@@ -444,12 +444,21 @@ header {
 .modern_img-2 {
     max-width: 175px;
     right: 0;
+    animation: floatAnimation 5s ease-in-out infinite;
+    z-index: 1; 
+}
+@keyframes floatAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); } /* Float upward slightly */
+    100% { transform: translateY(0); }
 }
 
 .modern_img-3 {
     max-width: 250px;
     right: 0;
     bottom: -2rem;
+    animation: floatAnimation 5s ease-in-out infinite;
+    z-index: 1; 
 }
 
 .modern_grid {
